@@ -14,13 +14,13 @@ public:
 
     void setPolar(double radius, double angle);
 
-    void setReal(double real) { this->real = real; }
+    void setReal(double real);
 
-    void setImaginary(double imaginary) { this->imaginary = imaginary; }
+    void setImaginary(double imaginary);
 
-    void setRadius(double radius) { this->radius = radius; }
+    void setRadius(double radius);
 
-    void setAngle(double angle) { this->angle = angle; }
+    void setAngle(double angle);
 
     float getReal() { return real; }
 
@@ -29,6 +29,10 @@ public:
     float getRadius() { return radius; }
 
     float getAngle() { return angle; }
+
+    void calculateRadiusAndAngle();
+
+    void calculateRealAndImaginary();
 };
 
 #endif
